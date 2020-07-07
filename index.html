@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <title>Are you feeling lucky?</title>
+</head>
+
+<body>
+    <header>
+        <h1>Step right up, try your luck, guess the number, four tries for a dollar!</h1>
+    </header>
+    <main>
+        <section class="main-section">
+            <h2>
+                Guess a number
+            </h2>
+            <ol>
+                <li>I will choose a number from 1 to 20</li>
+                <li>You will have 4 guesses to guess the correct number</li>
+                <li>After each guess I will tell you whether the guessed number is too high, too low or just right</li>
+            </ol>
+            <p>
+               
+            </p>
+
+        </section>
+        <section id="game" >
+            <p>Enter your number below:</p>
+            <input id="guess" type="number">
+            <button>Try your luck</button>
+            <span id="tries-remaining" class="progress">Tries Remaining:</span>
+            <span id="hi-low" class="progress">Your last guess was:</span>
+            <span id="wins" class="progress" >You have won 0 games</span>
+            <span id="losses" class="progress">You have lost 0 games:</span>
+        </section>
+    </main>
+    <footer>
+        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
