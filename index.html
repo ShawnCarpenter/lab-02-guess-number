@@ -33,12 +33,17 @@
         </section>
         <section id="game" >
             <p>Enter your number below:</p>
-            <input id="guess" type="number">
+            <input id="guess"
+                type="number"
+                min="1"
+                max="20">
             <button id="play-button">Try your luck</button>
-            <span id="tries-remaining" class="progress">Tries Remaining:</span>
-            <span id="hi-low" class="progress">Your last guess was:</span>
-            <span id="wins" class="progress" >You have won 0 games</span>
-            <span id="losses" class="progress">You have lost 0 games:</span>
+        </section>
+        <section id="scoreboard">
+            <span>You have <span id="tries-remaining" class="progress">4</span> tries remaining</span>
+            <span>Your last guess was: <span id="hi-low" class="progress"></span></span>
+            <span>You have won <span id="wins" class="progress" >0</span> games</span>
+            <span>You have lost <span id="losses" class="progress">0 </span> games.</span>
         </section>
     </main>
     <footer>

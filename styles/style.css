@@ -34,8 +34,8 @@ section {
     background-color: var(--color5);
     width: 1000px;
     max-width: 80%;
-    display: grid;
-    grid-template: 1fr / 1fr / 1fr / 1fr;
+    display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     padding-top: var(--gutter);
