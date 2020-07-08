@@ -56,7 +56,6 @@ function playGame(guessedNumber) {
 playButton.addEventListener('click', ()=> {
     if (!gameOver) {
         const guessedNumber = Number(guess.value);
-        console.log(correctNumber);
         playGame(guessedNumber);
     } else {
         restartGame();
