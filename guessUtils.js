@@ -2,9 +2,9 @@
 
 export function compareNumbers(guess, correctNumber) {
     const guessedNumber = Number(guess);
-    if (guess === correctNumber) return 0;
-    if (guess > correctNumber) return 1;
-    if (guess < correctNumber) return -1;
+    if (guessedNumber === correctNumber) return 0;
+    if (guessedNumber > correctNumber) return 1;
+    if (guessedNumber < correctNumber) return -1;
 }
 
 export function generateNumber() {

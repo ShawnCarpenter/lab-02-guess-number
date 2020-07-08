@@ -17,7 +17,7 @@
         <h1>Step right up, try your luck, guess the number, four tries for a dollar!</h1>
     </header>
     <main>
-        <section class="main-section">
+        <section id="instructions" class="instructions" >
             <h2>
                 Guess a number
             </h2>
@@ -26,29 +26,22 @@
                 <li>You will have 4 guesses to guess the correct number</li>
                 <li>After each guess I will tell you whether the guessed number is too high, too low or just right</li>
             </ol>
-            <p>
-               
-            </p>
-
         </section>
-        <section id="game" >
-            <p>Enter your number below:</p>
+        <section id="game" class="game">
+            <h2>Enter your number below:</h2>
             <input id="guess"
                 type="number"
                 min="1"
                 max="20">
-            <button id="play-button">Try your luck</button>
+            <button id="play-button">Pick a number</button>
         </section>
-        <section id="scoreboard">
-            <span>You have <span id="tries-remaining" class="progress">4</span> tries remaining</span>
-            <span>Your last guess was: <span id="hi-low" class="progress"></span></span>
-            <span>You have won <span id="wins" class="progress" >0</span> games</span>
-            <span>You have lost <span id="losses" class="progress">0 </span> games.</span>
+        <section id="scoreboard" class="hidden scoreboard">
+            <div>You have <span id="tries-remaining" class="progress">4</span> tries remaining</div>
+            <div>Your last guess was: <span id="hi-low" class="progress"></span></div>
+            <div>You have won <span id="wins" class="progress" >0</span> games</div>
+            <div>You have lost <span id="losses" class="progress">0 </span> games.</div>
         </section>
     </main>
-    <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
-    </footer>
 
     <script type="module" src="app.js"></script>
 </body>
